@@ -1,0 +1,1 @@
+astronvim.initialize_packer()
