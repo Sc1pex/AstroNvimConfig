@@ -1,0 +1,29 @@
+{
+  "fstream problem": {
+    "prefix": "pbfstream",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "ifstream fin(\"$1.in\");",
+      "ofstream fout(\"$1.out\");",
+      "",
+      "int main() {",
+      "$0",
+      "}"
+    ]
+  },
+  "iostream problem": {
+    "prefix": "pbiostream",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "$0",
+      "}"
+    ]
+  }
+}
