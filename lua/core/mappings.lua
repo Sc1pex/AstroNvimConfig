@@ -20,17 +20,11 @@ maps.n["<C-s>"] = { "<cmd>w!<cr>", desc = "Force write" }
 maps.n["<C-q>"] = { "<cmd>q!<cr>", desc = "Force quit" }
 maps.n["Q"] = "<Nop>"
 
--- Packer
-maps.n["<leader>pc"] = { "<cmd>PackerCompile<cr>", desc = "Packer Compile" }
-maps.n["<leader>pi"] = { "<cmd>PackerInstall<cr>", desc = "Packer Install" }
-maps.n["<leader>ps"] = { "<cmd>PackerSync<cr>", desc = "Packer Sync" }
-maps.n["<leader>pS"] = { "<cmd>PackerStatus<cr>", desc = "Packer Status" }
-maps.n["<leader>pu"] = { "<cmd>PackerUpdate<cr>", desc = "Packer Update" }
+maps.n["<leader>y"] = { "\"+y" }
+maps.v["<leader>y"] = { "\"+y" }
 
--- AstroNvim
-maps.n["<leader>pA"] = { "<cmd>AstroUpdate<cr>", desc = "AstroNvim Update" }
-maps.n["<leader>pv"] = { "<cmd>AstroVersion<cr>", desc = "AstroNvim Version" }
-maps.n["<leader>pl"] = { "<cmd>AstroChangelog<cr>", desc = "AstroNvim Changelog" }
+maps.n["<leader>d"] = { "\"_d" }
+maps.v["<leader>d"] = { "\"_d" }
 
 -- Bufdelete
 if is_available("bufdelete.nvim") then
@@ -135,16 +129,7 @@ if is_available("neovim-session-manager") then
 	maps.n["<leader>Sd"] = { "<cmd>SessionManager! delete_session<cr>", desc = "Delete session" }
 	maps.n["<leader>Sf"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions" }
 	maps.n["<leader>S."] =
-		{ "<cmd>SessionManager! load_current_dir_session<cr>", desc = "Load current directory session" }
-end
-
--- Package Manager
-if is_available("mason.nvim") then
-	maps.n["<leader>pI"] = { "<cmd>Mason<cr>", desc = "Mason Installer" }
-end
-
-if is_available("mason-tool-installer.nvim") then
-	maps.n["<leader>pU"] = { "<cmd>MasonToolsUpdate<cr>", desc = "Mason Update" }
+	{ "<cmd>SessionManager! load_current_dir_session<cr>", desc = "Load current directory session" }
 end
 
 -- LSP Installer
